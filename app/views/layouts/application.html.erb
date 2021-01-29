@@ -11,7 +11,10 @@
   </head>
 
   <body>
-    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/navbar' %> <br>
+
+    <%= flash[:notice] || flash[:alert] %>
+
     <%= yield %>
   </body>
 </html>
